@@ -12,7 +12,7 @@
     <div class="caption">
         <div class="container">
             <div class="row">
-                <div class="col-8">
+                <div class="col-sm-12 col-lg-8">
                     <div class="caption">
                         <div class="container">
                             <h1> 
@@ -22,7 +22,7 @@
                             </h1>
                         </div>
                         <div class="row">
-                            <div class="col-6 box">
+                            <div class="col-sm-6 box">
                                 <label class="container2">
                                     <input type="checkbox" id="numbers" checked="checked">
                                     <span class="checkmark"></span>
@@ -30,7 +30,7 @@
                                     <p>Contains numbers : 1 2 ... 9 0</p>
                                 </label>   
                             </div> 
-                            <div class="col-6 box">
+                            <div class="col-sm-6 box">
                                 <label class="container2">
                                     <input type="checkbox" id="symbols" checked="checked">
                                     <span class="checkmark"></span>
@@ -38,7 +38,7 @@
                                     <p>Contains symbols : ! ? # $ % & * + - =</p>
                                 </label>   
                             </div>  
-                            <div class="col-6 box">
+                            <div class=" col-sm-6 box">
                                 <label class="container2">
                                     <input type="checkbox" id="lowercases" checked="checked">
                                     <span class="checkmark"></span>
@@ -46,7 +46,7 @@
                                     <p>Contains lowercase letters : a b ... y z</p>
                                 </label>   
                             </div>  
-                            <div class="col-6 box">
+                            <div class="col-sm-6 box">
                                 <label class="container2">
                                     <input type="checkbox" id="uppercases" checked="checked">
                                     <span class="checkmark"></span>
@@ -54,7 +54,7 @@
                                     <p style="text-transform: uppercase">Contains uppercase letters : A B ... Y Z</p>
                                 </label>   
                             </div>  
-                            <div class="col-6 box">
+                            <div class="col-sm-6 box">
                                 <label class="container2">
                                     <input type="checkbox" id="similars" checked="checked">
                                     <span class="checkmark"></span>
@@ -62,26 +62,26 @@
                                     <p>No ambiguous characters : 1 l I ! 0 O Q 8 B</p>
                                 </label>   
                             </div>  
-                            <div class="col-6 box">
+                            <div class="col-sm-5 box">
                                 <label class="container2">
                                     <input type="number" id="password-length"  min="8" max="60" value="12">
-                                    <h4>Lenght</h4>
-                                    <p>Indicate the desired lenght : max is 60 </p>
+                                    <h4>Length</h4>
+                                    <p>Indicate the desired length : max is 60 </p>
                                 </label>   
                             </div>                           
                         </div>
                         <div class="row">
-                            <div class="col-9">
+                            <div class=" col-lg-9">
                                 <input class="result" id="password-1">
                             </div>
-                            <div class="col-3">
+                            <div class=" col-lg-3">
                                 <button id="submit-btn" >Generate</button>
                                 <button id="copy" class="blue-btn" style="display:none " onclick="copyPassword('password-1')">Copy</button>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-4 lock">
+                <div class="d-none d-lg-block col-lg-4 lock">
                     <div class="caption">
                         <svg id="Group_35" data-name="Group 35" xmlns="http://www.w3.org/2000/svg" width="400" height="503.2673" viewBox="0 0 553.839 696.824">
                             <path id="Path_7" data-name="Path 7" d="M1609.954,668.651v-70.8a17.337,17.337,0,0,0-16.4-17.393c-128.055-6.533-197.669-59.72-227.774-90.832a17.191,17.191,0,0,0-24.661,0c-30.1,31.112-99.719,84.3-227.774,90.832a17.338,17.338,0,0,0-16.4,17.393V882.434A210.384,210.384,0,0,0,1201.822,1064.1l115.493,66.661a72.436,72.436,0,0,0,72.269,0l115.493-66.661a210.384,210.384,0,0,0,104.877-181.664V716.286a10.207,10.207,0,1,1,20.415,0V882.434a230.829,230.829,0,0,1-115.085,199.343l-115.493,66.661a92.892,92.892,0,0,1-92.683,0l-115.493-66.661A230.829,230.829,0,0,1,1076.53,882.434V597.853a37.744,37.744,0,0,1,35.78-37.781c121.059-6.165,186.128-55.678,214.137-84.64a37.6,37.6,0,0,1,54,0c28.009,28.962,93.078,78.474,214.137,84.626a37.765,37.765,0,0,1,35.78,37.794v70.8a10.207,10.207,0,1,1-20.415,0Z" transform="translate(-1076.53 -464)" fill="#03045e"/>

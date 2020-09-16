@@ -20,6 +20,7 @@ h1 {
     font-weight: 700 ;
     margin-bottom: 100px;
     text-align: left;
+    margin-left: -10px;
 }
 .generate{
     margin-top: 100px;
@@ -65,12 +66,12 @@ input[type=checkbox]{
     &:checked + label {
         .box {
             stroke-dashoffset: 320;
-            transition: stroke-dashoffset .3s linear;
+            transition: stroke-dashoffset .5s linear;
             fill: #9bf6ff;
         }
         .check {
             stroke-dashoffset: 0;
-            transition: stroke-dashoffset .3s linear;
+            transition: stroke-dashoffset .5s linear;
         }
     }
 }
@@ -153,9 +154,18 @@ input[type="number"]:focus{
     font-weight: 400;
     font-size: 10px;
 }
+.collection1{
+    margin-left: -50px;
+}
 @media (max-width: 992px){
-    body {
-        height: 100vh;
+    .caption{
+        width: 100%;
+        max-width: 100%;
+        position: absolute;
+        left: 46%;
+        top: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
     }
     svg {
         padding-left: 30px;
@@ -175,20 +185,53 @@ input[type="number"]:focus{
         width: 600px;
         left: 50%;
         top: 50%;
-        -webkit-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-52.5%, -50%);
+        transform: translate(-52.5%, -50%);
     }
     button {
         position: absolute;
         left: 50%;
         top: 50%;
-        -webkit-transform: translate(-50%, 100%);
-        transform: translate(-50%, 100%);
+        -webkit-transform: translate(25%, 100%);
+        transform: translate(25%, 100%);
+    }
+    input[type=checkbox]{
+        display: none;
+        pointer-events: none;
+        & + label{
+            cursor: pointer;
+            display: grid;
+            grid-template-columns: auto 3fr;
+            svg {
+                width: 75px; 
+            }
+        }
+    }
+    input[type="number"]{
+        height: 25px;
+        width: 25px;
+        margin-left: 40px;    
+    }
+    .fix1 {
+        margin-left: 78px;
     }
 }
 @media (max-width: 767px){
-    body {
-        height: 120vh;
+    .caption{
+        width: 100%;
+        max-width: 100%;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+    h1 {
+        margin-top: 50px;
+        text-align: center;
+        margin-bottom: 50px;
+        font-size: 35px ;
+        margin-left: -50px;
     }
     .result {
         position: absolute;
@@ -197,28 +240,57 @@ input[type="number"]:focus{
         top: 50%;
         -webkit-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
+        margin: -25px;
     }
     button {
         position: absolute;
         left: 50%;
         top: 50%;
-        -webkit-transform: translate(-50%, 100%);
-        transform: translate(-50%, 100%);
+        -webkit-transform: translate(15%, 100%);
+        transform: translate(15%, 100%);
+    }
+    input[type=checkbox]{
+        display: none;
+        pointer-events: none;
+        & + label{
+            cursor: pointer;
+            display: grid;
+            grid-template-columns: auto 3fr;
+            svg {
+                width: 75px;
+                margin-left: -40px;    
+            }
+        }
+    }
+    input[type="number"]{
+        height: 25px;
+        width: 25px;
+        margin-left: 0px;    
     }
 }
 @media (max-width: 576px){
-    body {
-        height: 130vh;
+    .caption{
+        width: 100%;
+        max-width: 100%;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
     }
     h1 {
-        margin-top: 100px;
-        margin-left: 25px;
+        margin-top: 150px;
+        margin-bottom: 50px;
+        margin-left: -70px;
     }
     h4 {
         font-size: 18px;
     }
     p {
         font-size: 13px;
+    }
+    .collection1 {
+        margin-left: 0px;
     }
     .box{
         margin-left: 30px;
@@ -228,26 +300,40 @@ input[type="number"]:focus{
         width: 300px;
         left: 50%;
         top: 50%;
-        -webkit-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-40%, -50%);
+        transform: translate(-40%, -50%);
     }
     button {
         position: absolute;
         left: 50%;
         top: 50%;
-        -webkit-transform: translate(-50%, 100%);
-        transform: translate(-50%, 100%);
+        -webkit-transform: translate(40%, 100%);
+        transform: translate(40%, 100%);
+        margin-bottom: 50px;
     }
-}
-@media (max-width: 400px){
-    body {
-        height: 140vh;
+    input[type=checkbox]{
+        display: none;
+        pointer-events: none;
+        & + label{
+            cursor: pointer;
+            display: grid;
+            grid-template-columns: auto 3fr;
+            svg {
+                width: 75px;
+                margin-left: 0px; 
+            }
+        }
+    }
+    input[type="number"]{
+        height: 25px;
+        width: 25px;
+        margin-left: 40px;
+    }
+    .fix1 {
+        margin-left: 78px;
     }
 }
 @media (max-width: 350px){
-    body {
-        height: 160vh;
-    }
     h1 {
         margin-top: 200px;
         margin-left: 15px;
